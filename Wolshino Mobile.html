@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Wolshino </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            /* background-color: red; */
+            display: flex;
+        }
+
+        .container {
+            /* height: 1; */
+            width: 100%;
+            /* background-color: black; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-box {
+            width: 25%;
+            height: 50px;
+            /* background-color: blue; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: greenyellow;
+            font-size: 15px;
+        }
+
+        .center-box {
+            width: 50%;
+            height: 50px;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-family: arial;
+            color: rgb(151, 151, 151);
+        }
+
+        .right-box {
+            width: 25%;
+            height: 50px;
+            /* background-color: tomato; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-box {
+            background-color: transparent;
+            width: 90%;
+            height: 30px;
+            border: 1px solid greenyellow;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bt-join {
+            width: 80px;
+            height: 25px;
+            background-color: transparent;
+            border: none;
+            font-size: 15px;
+            color: greenyellow;
+        }
+
+        .main-box-1 {
+            width: 100%;
+            height: 200px;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pro-home {
+            width: 200px;
+            height: 150px;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: gray;
+        }
+
+        .sb-icon {
+            display: flex;
+            width: 50%;
+            justify-content: flex-end;
+        }
+
+        .image1 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+
+        .Join {
+            position: absolute;
+            top: 20%;
+            left: 42%;
+            color: white;
+        }
+
+        .icon {
+            display: flex;
+            gap: 50px;
+        }
+
+        .search-box1 {
+            width: 20%;
+            border-color: lawngreen;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .text {
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            font-family: arial;
+            font-size: 20px;
+            color: white;
+        }
+
+        .main-box-2 {
+            /* background-color: red; */
+            /* height: 30px; */
+            text-align: center;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        .text-box {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .for-house {
+            /* background-color: aqua; */
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .image-group {
+            border: 1px solid gainsboro;
+            width: 40%;
+            height: 150px;
+            /* background-color: palevioletred; */
+        }
+
+        .main-box-3 {
+            /* background-color: yellow; */
+            height: 800px;
+        }
+
+        .image-leave {
+            width: 95%;
+            height: 310px;
+            padding: 10px;
+        }
+        .don{
+            width: 410px;
+            height: 330px;
+            /* background-color: red; */
+        }
+        .about{
+            display: flex;
+            position: relative;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .leave-image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 12%;
+            width: 385px;
+            height: 250px;
+            flex-direction: column;
+            background-color: transparent;
+            border: 3px solid gainsboro;
+            color: wheat;
+            text-align: center;
+            font-size: 22px;
+            gap: 20px;
+        }
+        .news{
+            background-color: rgb(128 128 128) ;
+            width: 100%;
+            height: 570px;
+        }
+        .date-1{
+            width: 100%;
+            height: 150px;
+        }
+        .para-1{
+            background-color: rgb(245, 222, 179);
+            height: 70px;
+            text-align: center;
+            padding: 5px;
+            font-size: 25px;
+        }
+        .hig-1{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            padding: 10px;
+        }
+        .news-text{
+            font-family: arial;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <div class="header">
+        <div class="left-box">
+            <p>+9828633382</p>
+        </div>
+        <div class="center-box">
+            <p>Wolshino</p>
+        </div>
+        <div class="right-box">
+            <div class="search-box">
+                <!-- <input placeholder="" class="input-search"> -->
+                <button class="bt-join">Sign</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- container -->
+
+    <div class="container">
+        <div class="main-box-1">
+            <div class="pro-home">
+                <div class="image1">
+                    <img src="house13.jpg." class="image">
+                    <p class="text">Veil Project</p>
+                    <button class="Join search-box search-box1">Join</button>
+                </div>
+                <div class="icon">
+                    <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-right sb-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-box-2">
+            <div class="text-box">
+                <p>6 HOUSE TYPES</p>
+            </div>
+            <div class="for-house">
+                <div class="image-group">
+                    <img src="house12.png" class="image">
+                    <p>HEAVEN</p>
+                </div>
+                <div class="image-group">
+                    <img src="house12.png" class="image">
+                    <p>VEIL</p>
+                </div>
+                <div class="image-group">
+                    <img src="house12.png" class="image">
+                    <p>ASPEN</p>
+                </div>
+                <div class="image-group">
+                    <img src="house12.png" class="image">
+                    <p>TOWER</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-box-3">
+            <div class="about">
+                <div class="don">
+                    <img src="leave1.jpg" class="image-leave">
+                </div>
+                <div class="leave-image">
+                    <p class="main-text">About</p>
+                    <p class="para-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum delectus
+                        possimus sit, eaque iure iusto quidem! Ut eius eligendi, pariatur explicabo maiores tempora!
+                        Unde nobis explicabo porro dignissimos laborum!</p>
+                </div>
+            </div>
+            <div class="news">
+                <p class="news-text">News</p>
+                <div class="hig-1">
+                    <img src="leave1.jpg" class="date-1">
+                    <p class="para-1"> Where the Russians were resting in the summer of 2014 for lucky</p>
+                </div>
+                <div class="hig-1">
+                    <img src="leave1.jpg" class="date-1">
+                    <p class="para-1"> Where the Russians were resting in the summer of 2014 for lucky</p>
+                </div>
+            </div>
+            <div class="gallery"></div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
