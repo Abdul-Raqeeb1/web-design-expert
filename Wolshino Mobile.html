@@ -177,8 +177,8 @@
 
         .image-group {
             border: 1px solid gainsboro;
-            width: 40%;
-            height: 150px;
+            width: 30%;
+            height: 100px;
             /* background-color: palevioletred; */
         }
 
@@ -246,6 +246,40 @@
             font-family: arial;
             font-size: 40px;
             text-align: center;
+        }
+        .gallery{
+            background-color: white;
+            width: 100%;
+            height: 450px;
+        }
+        .leave-pic{
+            width: 100%;
+            height: 100%;
+        }
+        .main-gallery{
+            background-color: rgba(255, 255, 255, 0.849);
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+            font-family: arial;
+        }
+        .gallery-pic{
+            background-color: white;
+            width: 100%;
+            height: 405px;
+            display: flex;
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .gallery-pic-1{
+            width: 50%;
+            height: 400px;
+        }
+        .gallery-pic-2{
+            width: 50%;
+            height: 200px;
         }
     </style>
 </head>
@@ -331,7 +365,18 @@
                     <p class="para-1"> Where the Russians were resting in the summer of 2014 for lucky</p>
                 </div>
             </div>
-            <div class="gallery"></div>
+            <div class="gallery">
+                <div class="main-gallery">GALLERY</div>
+                <div class="gallery-pic">
+                    <div class="gallery-pic-1">
+                        <img src="left-pic.jpg" class="leave-pic">
+                    </div>
+                    <div class="gallery-pic-2">
+                        <img src="right-pic.jpeg" class="leave-pic">
+                        <img src="right-pic.jpeg" class="leave-pic">
+                    </div>
+                </div>
+            </div>
         </div>
 
 
