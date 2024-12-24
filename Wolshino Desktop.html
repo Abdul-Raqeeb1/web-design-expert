@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wolshino Desktop </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Nav-1 {
+            background-color: rgba(150, 148, 148, 0.753);
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            font-size: 22px;
+            font-family: arial;
+        }
+
+        .para-1 {
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-size: 35px;
+            /* background-color: brown; */
+        }
+
+        .para-2 {
+            font-size: 25px;
+        }
+
+        .Nav-2 {
+            /* background-color: red; */
+            display: flex;
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        .Menu-list {
+            display: flex;
+            gap: 70px;
+            list-style: none;
+            font-size: 22px;
+        }
+
+        .Nav-3 {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            margin-top: 15px;
+            align-items: center;
+            /* background-color: blue; */
+        }
+
+        .left-num {
+            width: 15%;
+            display: flex;
+            color: rgb(4, 224, 4);
+            font-family: arial;
+            justify-content: center;
+        }
+
+        .center-text {
+            width: 70%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .para-3 {
+            font-size: 25px;
+            color: rgba(182, 179, 179, 0.877);
+        }
+
+        .para-4 {
+            font-size: 15px;
+            color: rgba(182, 179, 179, 0.842);
+
+        }
+
+        .right-button {
+            width: 15%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .back-box {
+            background-color: transparent;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            border: 3px solid rgb(4, 224, 4);
+            border-radius: 50px;
+            justify-content: center;
+        }
+
+        .bt-box {
+            display: flex;
+            background: transparent;
+            border: none;
+            color: rgb(4, 224, 4);
+            width: 80px;
+            margin: 5px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-1 {
+            /* background-color: aqua; */
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            height: 350px;
+        }
+
+        .Main-pic {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            flex-direction: column;
+            /* background-color: red; */
+        }
+
+        .image-1 {
+            height: 300px;
+        }
+
+        .para-5 {
+            font-size: 30px;
+            font-family: ARIAL;
+            position: absolute;
+            color: skyblue;
+        }
+        .search-box{
+            position: absolute;
+            top: 60%;
+        }
+        .icon {
+            display: flex;
+            gap: 50px;
+            margin-top: 10px;
+        }
+        .sm-icon{
+            color: rgba(167, 165, 165, 0.863);
+        }
+        .para-6{
+            /* background-color: red; */
+            font-size: 30px;
+            font-family: arial;
+            text-align: center;
+        }
+        .black-house{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .house-12{
+            width: 100px;
+            height: 100px;
+        }
+        .para-7{
+            text-align: center;
+            margin-top: 5px;
+            font-family: arial;
+        }
+        /* .para-8{
+            /* font-family: arial;
+            position: absolute;
+            top: 135%; 
+        } */
+        .main-text{
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin: 10px;
+            padding-top: 10px;
+            position: absolute;
+            top: 115%;
+            border: 5px solid gainsboro;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 35px;
+        }
+        .leave-image{
+            width: 100%;
+            height: 600px;
+        }
+        .Main-box-1{
+            /* background-color: blue; */
+            width: 100%;
+            height: 380px;
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-2{
+            width: 30%;
+        }
+        .news-text{
+            text-align: center;
+            font-family: arial;
+            font-size: 30px;
+            /* background-color: red; */
+        }
+        .para-8{
+            background-color: rgba(204, 198, 198, 0.726);
+            display: flex;
+            width: 30%;
+            text-align: center;
+            font-size: 25px;
+            font-family: arial;
+            left: 4.3%;
+            position: absolute;
+            top: 213.9%;
+        }
+        .left-side{
+            position: absolute;
+            left: 34.6%;
+            margin-left: 10px;
+        }
+        .left-side-2{
+            position: absolute;
+            left: 65%;
+            margin-left: 10px;
+        }
+        .leave-pic{
+            width: 100%;
+            height: 100%;
+        }
+        .main-gallery{
+            background-color: rgba(255, 255, 255, 0.849);
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+            font-family: arial;
+        }
+        .gallery-pic{
+            background-color: white;
+            width: 100%;
+            height: 405px;
+            display: flex;
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .gallery-pic-1{
+            width: 50%;
+            height: 400px;
+        }
+        .gallery-pic-2{
+            width: 50%;
+            height: 200px;
+        }
+        .footer{
+            /* background-color: aquamarine; */
+            display: flex;
+        }
+        .footer-1{
+            width: 15%;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            /* background-color: black; */
+            /* color: white; */
+        }
+        .para-9{
+            font-size: 14px;
+            color: rgba(155, 153, 153, 0.897);
+        }
+        .para-9-1{
+            margin-right: 5px;
+            margin-top: 5px;
+            color: rgba(155, 153, 153, 0.897);
+        }
+        .footer-2{
+            width: 70%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* background-color: rebeccapurple; */
+        }
+        .footer-3{
+            width: 15%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            /* background-color: red; */
+        }
+        .image-3{
+            width: 40px;
+            height: 35px;
+        }
+        .image-4{
+            width: 60px;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <div class="Main-Nav">
+
+        <div class="Nav-1">
+            <p class="para-1"> Wolshino Desktop </p>
+            <br>
+            <p class="para-1 para-2"> Free light website / landing page psd </p>
+        </div>
+        <div class="Nav-2">
+            <ul class="Menu-list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Product</li>
+                <li>Gallery</li>
+                <li>House</li>
+                <li>Location</li>
+            </ul>
+        </div>
+        <div class="Nav-3">
+            <div class="left-num">+9652332395</div>
+            <div class="center-text">
+                <p class="para-1 para-3">Wolshino.com</p>
+                <p class="para-1 para-2 para-4">Summer resort</p>
+            </div>
+            <div class="right-button">
+                <div class="back-box">
+                    <button class="bt-box">Join</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Container -->
+
+    <div class="Main-Con">
+        <div class="content-1">
+
+            <div class="Main-pic">
+                <img src="house13.jpg" class="image-1">
+                <p class="para-5"><b>VEIL PROJECT</p></b>
+
+                <div class="search-box back-box">
+                    <button class="bt-box">Join</button>
+                </div>
+
+                <div class="icon">
+                    <a href="#"><i class="fa-solid fa-arrow-left sm-icon"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-right sm-icon"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content-2">
+            <p class="para-6"><b>6 HOUSE TYPES</p></b>
+            <div class="black-house">
+                <div class="Simple-house">
+                    <img src="house12.png" class="house-12">
+                    <p class="para-7"><b>ASPEN</p></b>
+                </div>
+                <div class="Simple-house">
+                    <img src="house12.png" class="house-12">
+                    <p class="para-7"><b>HEAVEN</p></b>
+                </div>
+                <div class="Simple-house">
+                    <img src="house12.png" class="house-12">
+                    <p class="para-7"><b>VEIL</p></b>
+                </div>
+                <div class="Simple-house">
+                    <img src="house12.png" class="house-12">
+                    <p class="para-7"><b>TOWER</p></b>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-3">
+            <div class="About">
+                <img src="right-pic.jpeg" class="leave-image">
+                <div class="main-text">
+                <p >About</p>
+                <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea quaerat, voluptates nesciunt nobis ducimus maxime magni reiciendis nulla rem commodi excepturi. Tempore, illum ut unde quis optio sed quos id?m dolor sit amet consectetur, adipisicing elit. Ea quaerat, voluptates nesciunt nobis ducimus maxime magni reim dolor sit amet consectetur, adipisicing elit. Ea quaerat, voluptates nesciunt nobis ducimus maxime magni reim dolor sit amet consectetur, adipisicing elit. Ea quaerat, voluptates nesciunt nobis ducimus maxime magni rei
+                    voluptates nesciunt net consectetur, adipisicing elit. Ea quaerat, voluptates nesciunt nobis ducimus maxime magni reim dolor sit amet consectetur, adipisicing elit. Ea quaerat, voluptates nesciunt nobis ducimus maxime magni rei
+                </p>
+            </div>
+            </div>
+            <div class="News">
+                <p class="news-text"><b>News</p></b>   
+                <div class="Main-box-1">
+                    <img src="leave1.jpg" class="image-2">
+                    <p class="para-8"> Where the Russians were resting in the summer of 2014 for lucky</p>
+                    <img src="leave1.jpg" class="image-2">
+                    <p class="para-8 left-side"> Where the Russians were resting in the summer of 2014 for lucky</p>
+                    <img src="leave1.jpg" class="image-2">
+                    <p class="para-8 left-side-2"> Where the Russians were resting in the summer of 2014 for lucky</p>
+                </div>
+                </div>
+            </div>
+            <div class="Gallery">
+                <div class="main-gallery"><b>GALLERY</div></b>
+                <div class="gallery-pic">
+                    <div class="gallery-pic-1">
+                        <img src="left-pic.jpg" class="leave-pic">
+                    </div>
+                    <div class="gallery-pic-2">
+                        <img src="right-pic.jpeg" class="leave-pic">
+                        <img src="right-pic.jpeg" class="leave-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-1">
+                <p class="para-9 para-9-1">learn from Expert / Design By</p>
+                <p class="para-9-1">Abdul Raqeeb </p>
+            </div>
+            <div class="footer-2">
+                <img src="facebook.png" class="image-3">
+                <img src="youtube.png" class="image-4">
+            </div>
+            <div class="footer-3">
+                <p class="para-9"><b>www.wolshino.com</p></b>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
