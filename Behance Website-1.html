@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Behance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000428;
+            background: -webkit-linear-gradient(to right, #004e92, #000428);
+            background: linear-gradient(to right, #004e92, #000428);
+
+        }
+
+        .main-nav {
+            /* background-color: red; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+
+        .bg-nav-1 {
+            background-color: transparent;
+            width: 80%;
+            display: flex;
+            height: 40px;
+            border: 1px solid gainsboro;
+            border-radius: 50px;
+        }
+
+        .nav-1 {
+            /* background-color: yellow; */
+            width: 25%;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+
+        .image-1 {
+            width: 15%;
+            height: 40px;
+            /* background-color: green; */
+        }
+
+        .para-1 {
+            width: 50%;
+            height: 40px;
+            display: flex;
+            /* margin-top: 5px; */
+            align-items: center;
+            /* background-color: gray; */
+            font-family: arial;
+            font-size: 1.4rem;
+        }
+
+        .nav-2 {
+            /* background-color: tomato; */
+            width: 50%;
+            align-items: center;
+            display: flex;
+            height: 40px;
+        }
+
+        .list-1 {
+            width: 100%;
+            list-style: none;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .nav-3 {
+            /* background-color: springgreen; */
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+
+        .bg-nav-2 {
+            border: 1px solid yellow;
+            width: 50%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+
+        .bt-1 {
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 50px;
+            background-color: yellow;
+        }
+
+        .main-content {
+            /* background-color: red; */
+            width: 100%;
+            height: 745px;
+            display: flex;
+        }
+
+        .con-left {
+            /* background-color: blue; */
+            width: 50%;
+            height: 745px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .con-1 {
+            /* background-color: violet; */
+            width: 100%;
+            height: 300px;
+        }
+
+        .bg-text-1 {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .para-2 {
+            width: 70%;
+            height: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* background-color: red; */
+            color: white;
+            font-size: 3.3rem;
+        }
+
+        .bg-text-2 {
+            /* background-color: red; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .para-3 {
+            width: 70%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .con-2 {
+            /* background-color: teal; */
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .bg-con-1 {
+            width: 23%;
+            height: 50px;
+            /* background-color: red; */
+            border: 1px solid gainsboro;
+            border-radius: 50px;
+        }
+
+        .app-list {
+            /* background-color: blue; */
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+        }
+
+        .icon-1 {
+            width: 25%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            border: 1px solid gainsboro;
+            border-radius: 50%;
+        }
+
+        .join-text {
+            display: flex;
+            color: white;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 50px;
+        }
+
+        .para-4 {
+            /* background-color: yellow; */
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 20px;
+            font-size: 0.7rem;
+        }
+
+        .para-5 {
+            /* background-color: green; */
+            width: 100%;
+            height: 30px;
+            font-size: 1.3rem;
+        }
+
+        .box-1 {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            gap: 5px;
+            margin-left: 5px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .con-3 {
+            /* background-color: springgreen; */
+            width: 90%;
+            display: flex;
+            align-items: center;
+            height: 100px;
+        }
+        .bg-con-2{
+            background-color: green;
+            width: 30%;
+            /* margin-left: 5rem; */
+            height: 50px;
+            border: 1px solid gainsboro;
+            border-radius: 50px;
+        }
+        .bt-2{
+            width: 100%;
+            height: 50px;
+            border: none;
+            font-size: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 50px;
+            background-color: yellow;
+        }
+        .temp{
+            /* background-color: red; */
+            width: 20%;
+            height: 100px;
+
+        }
+        .con-right {
+            /* background-color: yellow; */
+            width: 50%;
+            height: 745px;
+            display: flex;
+            justify-content: end;
+        }
+
+        .image-2 {
+            width: 100%;
+            height: 745px;
+        }
+
+        @media (max-width:1341px) {
+            .bg-text-1 {
+                height: 250px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav-bar -->
+    <div class="main-nav">
+        <div class="bg-nav-1">
+            <div class="nav-1">
+                <img src="logo.png" class="image-1">
+                <p class="para-1"><b> PoriuAi</p></b>
+            </div>
+            <div class="nav-2">
+                <ul class="list-1">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Feature</li>
+                    <li>Contact</li>
+                    <li>Pages</li>
+                </ul>
+            </div>
+            <div class="nav-3">
+                <div class="bg-nav-2">
+                    <button class="bt-1">Download Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="main-content">
+        <div class="con-left">
+            <div class="con-1">
+                <div class="bg-text-1">
+                    <p class="para-2"><b> Unleash the power <br> of <span>AI</span> to transform <br> your workflow</p>
+                    </b>
+                </div>
+                <div class="bg-text-2">
+                    <p class="para-3">This ai dolor site amet consectetur. Enim interdum tristique erat orci <br>risus
+                        neque
+                        varlius aliquam.</p>
+                </div>
+            </div>
+            <div class="con-2">
+                <div class="bg-con-1">
+                    <div class="app-list">
+                        <div class="box-1">
+                            <i class="fa-solid fa-bolt icon-1"></i>
+                            <div class="join-text">
+                                <p class="para-4">Download on the </p>
+                                <p class="para-5">App Store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-con-1">
+                    <div class="app-list">
+                        <div class="box-1">
+                            <i class="fa-brands fa-google-play icon-1"></i>
+                            <div class="join-text">
+                                <p class="para-4">Download on the </p>
+                                <p class="para-5">Google Play</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con-3">
+                <div class="temp"></div>
+                <div class="bg-con-2">
+                    <button class="bt-2">Download App</button>                    
+                </div>
+            </div>
+        </div>
+        <div class="con-right">
+            <div class="hand-pic">
+                <img src="hand-pic.png" class="image-2">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
