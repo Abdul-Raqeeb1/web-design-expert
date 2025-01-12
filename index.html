@@ -46,7 +46,7 @@
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 2.5rem;
-        color: white;
+        color: black;
       }
       /* .image-1 {
         width: 100px;
@@ -60,14 +60,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: black;
         gap: 70px;
         font-size: 1.5rem;
         font-family: Arial, Helvetica, sans-serif;
       }
-      a{
+      a {
         text-decoration: none;
-        color: white;
+        color: black;
       }
       .icon-style {
         font-size: 2.5rem;
@@ -75,13 +75,11 @@
       .main-content {
         /* background-color: yellow; */
         width: 100%;
-        height: 200px;
+        height: 300px;
         display: flex;
         justify-content: center;
-        color: white;
-        gap: 10px;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #000000a4;
+        color: black;
+        gap: 30px;
         align-items: center;
         flex-direction: column;
       }
@@ -89,12 +87,51 @@
         width: 100%;
         display: flex;
         font-size: 3rem;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000000a4;
         font-family: arial;
         justify-content: center;
       }
       .heading-3 {
         width: 100%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000000a4;
         text-align: center;
+        font-family: arial;
+      }
+      .para-back-style-1 {
+        /* background-color: red; */
+        width: 35%;
+        height: auto;
+        font-family: arial;
+      }
+      .para-1{
+        text-align: center;
+      }
+      .footer{
+        /* background-color: red; */
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+      }
+      .back-bt{
+        background-color: transparent;
+        width: 10%;
+        height: 50px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      .bt-1{
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        color: white;
+        font-size: 1.2rem;
         font-family: arial;
       }
     </style>
@@ -106,10 +143,10 @@
         <h1 class="heading-1">PORTFOLIO</h1>
         <!-- <img src="logo-1.png" class="image-1" /> -->
         <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="My Work.html"><li>My Work</li></a>
-          <a href="#"><li>Gallery</li></a>
-          <a href="#"><li>Contact</li></a>
+          <a href="#"><li><b>Home</li></a></b>
+          <a href="My Work.html"><li><b>My Work</li></a></b>
+          <a href="#"><li><b>Gallery</li></a></b>
+          <a href="#"><li><b>Contact</li></a></b>
           <a href="#"><i class="fa-solid fa-bars icon-style"></i></a>
         </ul>
       </div>
@@ -121,9 +158,28 @@
       <br />
       <br />
       <div class="main-content">
-        <h1 class="heading-2">Well Come</h1>
-        <h2 class="heading-3">To My PortFolio</h2>
+        <div class="main-heading">
+          <h1 class="heading-2">Well Come</h1>
+          <h2 class="heading-3">To My PortFolio</h2>
+        </div>
+        <div class="para-back-style-1">
+          <p class="para-1">
+            Hi, I'm Abdul Raqeeb, a web developer who loves designing and
+            building websites. I focus on creating websites that work well on
+            all devices and are easy to use. My aim is to turn your ideas into
+            reality with simple and effective web solutions.
+          </p>
+        </div>
       </div>
+      <div class="footer">
+        <div class="back-bt">
+          <button class="bt-1"><b>LEARN MORE</button></b>
+        </div>
+      </div>
+
+
+
+
     </div>
   </body>
 </html>
