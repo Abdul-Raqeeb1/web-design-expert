@@ -1,0 +1,107 @@
+$pink:        #f93195;
+$white:       #fcfcfc; 
+$transition-bezier: 1.000, 0.000, 0.000, 1.000;
+$transition-len: 0.35s;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  height: 50vh;
+  position: relative;
+  
+  &:nth-of-type(2n) {
+    background: $white;
+  }
+  a {
+    display: block;
+    margin: 1em auto;
+    width: 200px;
+    text-align: center;
+  }
+}
+.btn {
+  border-radius: 3px;
+  text-decoration: none;
+  position: relative;
+  padding: 16px;
+  border: 1px solid $white;
+  z-index: 20;
+  transition: all $transition-len cubic-bezier($transition-bezier); 
+}
+
+.btn:hover {
+  color: $white;
+}
+
+.btn-color {
+  border-color: $pink;
+  color: $pink;
+  
+  &::before,
+  &::after {
+    background: $pink;
+  }
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all $transition-len cubic-bezier($transition-bezier); 
+}
+
+.btn-l-r::after {
+  height: 100%;
+  width: 0;
+  top: 0;
+}
+ 
+.btn-l-r:hover::after { 
+  width: 100%; 
+}
+.btn-l-r::after {
+  left: 0;
+}
+
+/* from Liam Sheppard pen */
+/* https://codepen.io/liamsheppard/pen/NGVQOE */
+
+/* ------ another one ------ */
+/* ------ this one uses an bg image ------ */
+
+.btnFillup {
+  display: inline-block;
+  padding: 16px;
+  overflow: hidden;
+  color: $pink;
+  text-decoration: none;
+  border: 1px solid $pink;
+  border-radius: 3px;
+  background-position: 0 -100%;
+  background-repeat: repeat-x;
+  transition: background-position .8s ease;
+}
+
+.btnFillup:hover {
+  background-position: 100% 50%;
+  border-color: $pink;
+  color: $white;
+}
+
+.liquidbg {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjMwMXB4IiBoZWlnaHQ9IjEzN3B4IiB2aWV3Qm94PSIwIDAgMzAxIDEzNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNDEuMiAoMzUzOTcpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBhdGggMjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGQ9Ik0wLjUwMTk1MzEyNSw4Ljk2Mjg5MDYyIEwwLjUwMTk1MzEyNSwxMzYuMjk4MDIxIEwzMDAuMzYxNjYsMTM2LjI5ODAyMSBMMzAwLjM2MTY2LDcuMjEyNDYyNjcgQzMwMC4zNjE2Niw3LjIxMjQ2MjY3IDI5MC40NTExNzIsMTIuMDY4MzU5NCAyNzguMTg1NTQ3LDEyLjA2ODM1OTQgQzI2NS45MTk5MjIsMTIuMDY4MzU5NCAyNDcuMDMzMjAzLDAuMTA3NDIxODc1IDE5OS44MTI1LDAuMTA3NDIxODc1IEMxNTIuNTkxNzk3LDAuMTA3NDIxODc1IDEyNy42NzE4NzUsOS41MDU4NTkzNyAxMDEuNDMxNjQxLDkuNTA1ODU5MzcgQzc1LjE5MTQwNjIsOS41MDU4NTkzNyA1NS4xNjAxNTYyLDAuOTU1MDc4MTI1IDQxLjYzMDg1OTQsMC45NTUwNzgxMjUgQzI4LjEwMTU2MjUsMC45NTUwNzgxMjUgMC41MDE5NTMxMjUsOC45NjI4OTA2MiAwLjUwMTk1MzEyNSw4Ljk2Mjg5MDYyIFoiIGlkPSJQYXRoLTIiIGZpbGw9IiNGQzI5OTUiPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+');
+}
+.anglebg {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjMwMHB4IiBoZWlnaHQ9IjEzMHB4IiB2aWV3Qm94PSIwIDAgMzAwIDEzMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNDEuMiAoMzUzOTcpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBhdGggMiBDb3B5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgtMi1Db3B5IiBmaWxsPSIjRkMyOTk1IiBwb2ludHM9IjAgMzIuODU1NDY4NyAwIDEyOS4xOTA1OTkgMjk5Ljg1OTcwNyAxMjkuMTkwNTk5IDI5OS44NTk3MDcgMC4xMDUwNDA3OTEiPjwvcG9seWdvbj4KICAgIDwvZz4KPC9zdmc+');
+}
+
+/* courtesy of */
+/* https://codepen.io/stenno/ */

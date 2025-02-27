@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaha-Islamic Center</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .img-box-2{
+            /* background-color: red; */
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: end;
+        }
+        .image-4{
+            width: 50px;
+            height: 50px;
+            margin-left: 10%;
+        }
+        .text-box-3{
+            /* background-color: yellow; */
+            width: 100%;
+            height: 190px;
+        }
+        .heading-3{
+            font-size: 3.5rem;
+            margin-left: 10%;
+        }
+        .text-box-4{
+            /* background-color: brown; */
+            width: 100%;
+            height: 200px;
+        }
+        .para-7{
+            width: 90%;
+            height: 200px;
+            margin-left: 10%;
+            font-family: Times New Roman;
+            font-size: 1.2rem;
+        }
+        .btn-box-2{
+            /* background-color: orchid; */
+            width: 90%;
+            height: 100px;
+            display: flex;
+            /* align-items: center; */
+        }
+        .btn-2{
+             width: 18%;
+            height: 50px;
+            margin-left: 10%;
+            position: relative;
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: rgb(95, 158, 160);
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 8px;
+            z-index: 11;
+            
+        }
+        .btn-2::before {
+            content: "";
+            position: absolute ;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: orange;
+            transition: all 1s ease-in-out;
+        }
+        .btn-2:hover::before {
+            content: "Read More";
+            width: 100%;
+            z-index: 9;
+        }   
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="head-nav">
+            <div class="main-logo">
+                <img src="logo.webp" class="image-1">
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="main-header">
+            <ul class="ul-list-1">
+                <a href="#"><b>
+                        <li>HOME</li>
+                    </b></a>
+                <a href="#"><b>
+                        <li>ABOUT</li>
+                    </b></a>
+                <a href="#"><b>
+                        <li>EVENTS</li>
+                    </b></a>
+                <a href="#"><b>
+                        <li>PROGRAMS</li>
+                    </b></a>
+                <a href="#"><b>
+                        <li>FEATURES</li>
+                    </b></a>
+                <a href="#"><b>
+                        <li>CONTACT</li>
+                    </b></a>
+                <a href="#"><b>
+                        <li>DONATES</li>
+                    </b></a>
+            </ul>
+        </div>
+        <div class="header-2">
+            <div class="img-box">
+                <img src="image8.png" class="image-2">
+            </div>
+            <div class="text-box">
+                <h1>"AND ALLAH INVITES TO THE <br><span>HOME OF PEACE"</h1></span>
+                <p class="para-1"><b> Surah Yunus, Verse 25</p></b>
+            </div>
+            <div class="btn-box-1">
+                <button class="btn-1"><b>Become a Member</button></b>
+            </div>
+        </div>
+    </header>
+    <container>
+        <div class="main-con">
+            <div class="calender-box">
+                <div class="calender-1">
+                    <div class="img-box-1">
+                        <img src="image8.png" class="image-3">
+                    </div>
+                    <div class="text-box-2">
+                        <h1 class="heading-1">PRAYER</h1>
+                        <h1 class="heading-2">TIMES</h1>
+                    </div>
+                    <p class="para-2">Prayer times in Jakarta</p>
+                    <p class="para-3">Wed 26 Feb</p>
+
+                    <div class="main-time-list">
+                        <div class="time-list-1">
+                            <p class="para-4">Fajar</p>
+                            <p class="para-5">04:42 AM</p>
+                        </div>
+                        <div class="time-list-1">
+                            <p class="para-4">Sunrise</p>
+                            <p class="para-5">05:56 AM</p>
+                        </div>
+                        <div class="time-list-1">
+                            <p class="para-4">Dhuhr</p>
+                            <p class="para-5">12:08 PM</p>
+                        </div>
+                        <div class="time-list-1">
+                            <p class="para-4">Asr</p>
+                            <p class="para-5">03:13 PM</p>
+                        </div>
+                        <div class="time-list-1">
+                            <p class="para-4">Maghrib</p>
+                            <p class="para-5">06:15 PM</p>
+                        </div>
+                        <div class="time-list-1">
+                            <p class="para-4">Isha'a</p>
+                            <p class="para-5">07:25 PM</p>
+                        </div>
+                    </div>
+                    <div class="para-6">
+                        <p>Powered By Muslim Pro</p>
+                    </div>
+                </div>
+                <div class="calender-2">
+                    <div class="img-box-2">
+                        <img src="image8.png" class="image-4">
+                    </div>
+                    <div class="text-box-3">
+                        <h1 class="heading-3">Welcome to the <br> Islamic Center</h1>
+                    </div>
+                    <div class="text-box-4">
+                        <p class="para-7">The Shaha is not just a mosque for prayers rather it is a community center for all.<br>
+                            The Center is committed to preserving an Islamic identity, building and<br>
+                            supporting a viable Muslim community, promoting a comprehensive Islamic<br>
+                            way of life based on the Holy Quran and the<br>
+                            Sunnah of Prophet Muhammad.</p>
+                    </div>
+                    <div class="btn-box-2">
+                        <button class="btn-2">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </container>
+    <footer></footer>
+
+</body>
+
+</html>
+
+
+<!-- https://shaha.ancorathemes.com/ -->
