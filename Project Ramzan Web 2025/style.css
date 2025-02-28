@@ -6,8 +6,9 @@
 body {
     width: 100%;
     height: 98vh;
-    background-image: url(image5.png);
-    font-family: borias;
+    background-image: url(image4.jpg);
+    font-family: Cinzel Decorative;
+    background-repeat: no-repeat;
 }
 
 .head-nav {
@@ -84,6 +85,11 @@ a::after {
 .img-box{
     margin-top: 5%;
 }
+.image-1{
+    width: 100px;
+    height: 100px;
+    /* background-color: rgba(255, 255, 255, 0.047); */
+}
 .image-2{
     /* margin-top: 70%; */
     width: 40px;
@@ -127,11 +133,12 @@ span{
     transition: all 1s;
     border: 2px solid rgb(95, 158, 160);
 }
-.calender-box {
-    background-color: red;
+.calender-box-1 {
+    /* background-color: red; */
     width: 100%;
     height: 750px;
     display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.066);
 }
 
 .calender-1 {
@@ -145,7 +152,7 @@ span{
 }
 
 .calender-2 {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 70%;
     height: 100%;
 }
@@ -222,4 +229,212 @@ span{
 .para-6{
     font-family: Times New Roman;
     color: rgb(122, 62, 1);
+}
+.img-box-2{
+    /* background-color: red; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: end;
+}
+.image-4{
+    width: 50px;
+    height: 50px;
+    margin-left: 10%;
+}
+.text-box-3{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 190px;
+}
+.heading-3{
+    font-size: 3.5rem;
+    margin-left: 10%;
+}
+.text-box-4{
+    /* background-color: brown; */
+    width: 100%;
+    height: 200px;
+}
+.para-7{
+    width: 90%;
+    height: 200px;
+    margin-left: 10%;
+    font-family: Times New Roman;
+    font-size: 1.2rem;
+}
+.btn-box-2{
+    /* background-color: orchid; */
+    width: 90%;
+    height: 100px;
+    display: flex;
+    /* align-items: center; */
+}
+.btn-2{
+     width: 18%;
+    height: 50px;
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgb(95, 158, 160);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 11;
+    
+}
+.btn-2::before {
+    content: "";
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: orange;
+    transition: all 1s ease-in-out;
+    z-index: -11;
+}
+.btn-2:hover::before {
+    width: 100%;
+    z-index: -9;
+}
+
+.btn-box-3{
+    /* background-color: orchid; */
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* align-items: center; */
+}
+.btn-3{
+     width: 18%;
+    height: 50px;
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 11;
+    
+}
+.btn-3::before {
+    content: "";
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(95, 158, 160);
+    transition: all 1s ease-in-out;
+    z-index: -11;
+}
+.btn-3:hover::before {
+    width: 100%;
+    z-index: -9;
+}
+.calender-3 {
+    background-color: white;
+    width: 100%;
+    height: 800px;
+}
+
+.img-box-3 {
+    /* background-color: red; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-5 {
+    width: 50px;
+    height: 50px;
+}
+
+.text-box-5 {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.event-card {
+    /* background-color: brown; */
+    width: 100%;
+    height: 450px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-1 {
+    background-color: transparent;
+    /* border: 1px solid; */
+    width: 20%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icon-1 {
+    font-size: 3rem;
+    color: black;
+}
+
+.para-8 {
+    width: 100%;
+    text-align: center;
+    color: rgb(36, 36, 36);
+}
+.main-foot{
+    background-color: black;
+    width: 100%;
+    height: 205px;
+}
+.contact-foot{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+.heading-5{
+    color: white;
+}
+.para-9{
+    color: white;
+    font-size: 0.9rem;
+}
+.copy-right{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para-10{
+    color: white;
 }
