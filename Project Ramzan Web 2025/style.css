@@ -8,7 +8,7 @@ body {
     height: 98vh;
     background-image: url(image4.jpg);
     font-family: Cinzel Decorative;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .head-nav {
@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color: rgb(15, 225, 244);
 }
 
 a:hover::after {
@@ -68,7 +68,7 @@ a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: orange;
+    background-color: rgba(15, 225, 244, 0.993);
     transition: transform 0.25s ease-out;
 }
 .header-2{
@@ -121,17 +121,17 @@ span{
 .btn-1{
     width: 10%;
     height: 50px;
-    background-color: orange;
-    border: 2px solid orange;
+    background-color: rgb(95, 158, 160);
+    border: 2px solid rgb(95, 158, 160);
     border-radius: 5px;
     color: white;
     font-size: 0.9rem;
     font-family: borias;
 }
 .btn-1:hover{
-    background-color: rgb(95, 158, 160);
+    background-color: rgba(15, 225, 244, 0.88);
     transition: all 1s;
-    border: 2px solid rgb(95, 158, 160);
+    border: 2px solid rgb(15, 225, 244, 0.684);
 }
 .calender-box-1 {
     /* background-color: red; */
@@ -142,7 +142,7 @@ span{
 }
 
 .calender-1 {
-    background-color: rgb(244, 137, 15);
+    background-color: rgba(15, 225, 244, 0.684);
     width: 30%;
     height: 100%;
     display: flex;
@@ -152,7 +152,7 @@ span{
 }
 
 .calender-2 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.802);
     width: 70%;
     height: 100%;
 }
@@ -295,7 +295,7 @@ span{
     left: 0;
     width: 0;
     height: 100%;
-    background: orange;
+    background: rgba(15, 225, 244, 0.684);
     transition: all 1s ease-in-out;
     z-index: -11;
 }
@@ -323,7 +323,7 @@ span{
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background: orange;
+    background: rgb(15, 225, 244, 0.684);
     border: none;
     cursor: pointer;
     overflow: hidden;
@@ -338,7 +338,7 @@ span{
     left: 0;
     width: 0;
     height: 100%;
-    background: rgb(95, 158, 160);
+    background: rgb(18, 227, 238);
     transition: all 1s ease-in-out;
     z-index: -11;
 }
@@ -346,6 +346,9 @@ span{
     width: 100%;
     z-index: -9;
 }
+/* .btn-3:hover{
+    color: black;
+} */
 .calender-3 {
     background-color: white;
     width: 100%;
