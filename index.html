@@ -3,183 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsonal PortFolio</title>
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <title>My Work</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        /* background: #232526;
-            background: -webkit-linear-gradient(to right, #414345, #232526);
-            background: linear-gradient(to right, #414345, #232526); */
-        background-image: url("background-3.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 99%;
-        height: auto;
-      }
-      .main-nav {
-        background-color: transparent;
-        width: 100%;
-        height: 150px;
-        display: flex;
-        justify-content: space-between;
-        border: 2px solid rgba(97, 94, 94, 0.329);
-        border-left: 0px;
-        border-right: 0px;
-        border-top: 0px;
-      }
-      .heading-1 {
-        /* background-color: green; */
-        width: 30%;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 2.5rem;
-        color: black;
-      }
-      /* .image-1 {
-        width: 100px;
-        height: 100px;
-      } */
-      ul {
-        /* background-color: gray; */
-        width: 50%;
-        height: 150px;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        gap: 70px;
-        font-size: 1.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-      }
-      .icon-style {
-        font-size: 2.5rem;
-      }
-      .main-content {
-        /* background-color: yellow; */
-        width: 100%;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        color: black;
-        gap: 30px;
-        align-items: center;
-        flex-direction: column;
-      }
-      .heading-2 {
-        width: 100%;
-        display: flex;
-        font-size: 3rem;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #000000a4;
-        font-family: arial;
-        justify-content: center;
-      }
-      .heading-3 {
-        width: 100%;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #000000a4;
-        text-align: center;
-        font-family: arial;
-      }
-      .para-back-style-1 {
-        /* background-color: red; */
-        width: 35%;
-        height: auto;
-        font-family: arial;
-      }
-      .para-1{
-        text-align: center;
-      }
-      .footer{
-        /* background-color: red; */
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-      }
-      .back-bt{
-        background-color: transparent;
-        width: 10%;
-        height: 50px;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-      }
-      .bt-1{
-        background-color: rgb(0, 0, 0);
-        width: 100%;
-        height: auto;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 50px;
-        color: white;
-        font-size: 1.2rem;
-        font-family: arial;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
+    <script src="javaScript.js"></script>
   </head>
-
   <body>
-    <div class="main-parent">
-      <div class="main-nav">
-        <h1 class="heading-1">PORTFOLIO</h1>
-        <!-- <img src="logo-1.png" class="image-1" /> -->
-        <ul>
-          <a href="#"><li><b>Home</li></a></b>
-          <a href="My Work.html"><li><b>My Work</li></a></b>
-          <a href="#"><li><b>Gallery</li></a></b>
-          <a href="#"><li><b>Contact</li></a></b>
-          <a href="#"><i class="fa-solid fa-bars icon-style"></i></a>
-        </ul>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="main-content">
-        <div class="main-heading">
-          <h1 class="heading-2">Well Come</h1>
-          <h2 class="heading-3">To My PortFolio</h2>
-        </div>
-        <div class="para-back-style-1">
-          <p class="para-1">
-            Hi, I'm Abdul Raqeeb, a web developer who loves designing and
-            building websites. I focus on creating websites that work well on
-            all devices and are easy to use. My aim is to turn your ideas into
-            reality with simple and effective web solutions.
-          </p>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="back-bt">
-          <button class="bt-1"><b>LEARN MORE</button></b>
-        </div>
-      </div>
+    <nav class="navbar">
+      <a href="#" class="logo">Portfolio</a>
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="https://wa.me/+923703083097">Contact</a></li>
+      </ul>
+    </nav>
 
-
-
-
+    <div class="bars-animation">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 5"></div>
+      <div class="bar" style="--i: 4"></div>
+      <div class="bar" style="--i: 3"></div>
+      <div class="bar" style="--i: 2"></div>
+      <div class="bar" style="--i: 1"></div>
     </div>
+
+    <section class="home">
+      <div class="home-info">
+        <h1>Abdul Raqeeb</h1>
+        <h2>
+          I'm a
+          <span style="--i: 4" data-text="Full Stack Devleoper"
+            >Full Stack Devleoper</span
+          >
+          <span style="--i: 3" data-text="Youtuber">Youtuber</span>
+          <span style="--i: 2" data-text="Blogger">Blogger</span>
+          <span style="--i: 1" data-text="Designer">Designer</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          cum quas cupiditate minima sint amet voluptas temporibus fuga?
+          Adipisci cupiditate at quas unde fugit nesciunt eos aliquam
+          voluptatibus ipsam aut!
+        </p>
+        <div class="btn-sci">
+          <a href="images/cv.pdf" class="btn">Download CV</a>
+          <div class="sci">
+            <a href="#">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-behance"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="images/pic-2.png" />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
