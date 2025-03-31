@@ -1,0 +1,41 @@
+Git is a free, open source version control tool that developers install locally on their personal computers.
+
+GitHub is a pay-for-use online service built to run Git in the cloud.
+
+
+main entry file = index.html
+
+
+methods: 
+1. noob 
+2. pro
+
+
+upload/push :
+git add .
+git commit -m"message"
+git push origin main 
+
+
+download/pull:
+
+for first time:
+git clone git_url
+
+or
+
+after first time:
+git pull origin main
+
+
+
+Checking for any local changes:
+
+git status
+
+
+
+https://ali22458pp.github.io/Ali-Expert-Web-Design/
+https://abdul-raqeeb1.github.io/web-design-expert/
+
+usr: sadam4expert
