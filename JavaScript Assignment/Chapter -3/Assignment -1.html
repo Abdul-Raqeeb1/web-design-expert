@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List </title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #7f7fd5;
+    background: -webkit-linear-gradient(to right,#91eae4,#86a8e7,#7f7fd5);
+    background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.nav-search{
+    /* background-color: red; */
+    width: 100%;
+    height: 150px;
+}
+
+.nav-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#input-box{
+    width: 20%;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.btn-1{
+    background-color: rgb(0, 162, 255);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    width: 50px;
+    height: 35px;
+}
+
+.content-list{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-list{
+    /* background-color: red; */
+    width: 30%;
+    height: 50px;
+    display: flex;
+}
+
+.list-1{
+    background-color: rgb(0, 162, 255);
+    width: 20%;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-2{
+    background-color: white;
+    width: 80%;
+    height: 50px;
+}
+.list-3{
+    background-color: red;
+    width: 20%;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#para-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.input-1{
+    width: 100%;
+    height: 50%;
+}
+.icon-1{
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+    <script>
+        
+let isArray = [];
+let isNumber = 0;
+
+// document.write(window.localStorage.getItem("localSave"));
+
+let indentity = {
+    id:0,
+    name:"empty",
+    isScaner:false,
+}
+
+function cardIdentity(){
+    let popps = document.getElementById("input-box").value;
+    
+    indentity.id = isNumber;
+    indentity.name = popps;
+
+    isArray[isNumber] = JSON.stringify(indentity);
+
+    isNumber = isNumber + 1;
+
+    let localSave = document.getElementById('makeId').innerHTML  //`<li>${indentity.name} <input type='checkbox' id='${indentity.id}'></li>`;
+    
+    
+    // window.localStorage.setItem('listItem',localSave);
+    // window.location.reload()
+    generation();
+}
+
+function indentityDelete(){
+    isArray.forEach((reMove)=>{
+        reMove = JSON.parse(reMove);
+        let see1 = document.getElementById("see" + reMove.id);
+
+        if(see1.checked == true){
+            delete isArray[reMove.id];
+
+        }
+    });
+    
+    generation();
+}
+
+function indentityCompleted(){
+
+}
+
+
+function generation(){
+    console.log("starting generation ..... ");
+
+    let makeId = document.getElementById('makeId');
+
+    makeId.innerHTML = "";
+
+    isArray.forEach((indentity) => {
+
+        indentity = JSON.parse(indentity);
+
+        // makeId.innerHTML //+= `<li>${indentity.name} <input type="checkbox" id="see${indentity.id}"></li>`
+    
+    document.getElementById("makeId").innerHTML += `
+    <div class="content-list">
+      <div class="main-list">
+        <div class="list-1">
+            <input type="checkbox" class="input-1" id="see${indentity.id}">
+        </div>
+        <div class="list-2">
+            <p id="para-1">${indentity.name}</p>
+        </div>
+        <button class="list-3" onclick="indentityDelete()">
+            <i class="fa-solid fa-trash icon-1"></i>
+        </button>
+      </div>
+      </div>`;
+    
+    });
+
+    savelocal();
+}
+
+function savelocal(){
+    window.localStorage.setItem("cardIdentity",cardIdentity);
+}
+    </script>
+</head>
+<body>
+    <div class="nav-search">
+        <div class="nav-box">
+          <input type="text" id="input-box" placeholder="To-Do-List" />
+          <button onclick="cardIdentity()" class="btn-1">Add</button>
+        </div>
+      </div>
+  
+  
+      <div id="main-box">
+        <ul id="makeId">
+          <div></div>
+        </ul>
+  
+        <div class="content-list">
+          <div class="main-list">
+            <div class="list-1">
+              <input type="checkbox" class="input-1">
+            </div>
+            <div class="list-2">
+            </div>
+            <button class="list-3" onclick="indentityDelete()">
+              <i class="fa-solid fa-trash icon-1"></i>
+            </button>
+          </div>
+        </div>
+  
+      </div>
+
+</body>
+</html>

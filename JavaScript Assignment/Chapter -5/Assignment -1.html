@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Message Box</title>
+
+</head>
+<body>
+    <h2>Leave a Comment</h2>
+
+    <textarea  id="comment-input" placeholder="Write Your Message "></textarea>
+
+    <br>
+    <button id="btn-1" onclick="addComment()">Submit</button>
+
+    <br>
+    <h3>Comments :</h3>
+    <ul id="comment-list">No Comment Yet !</ul>
+
+    <script>
+
+        function addComment(){
+            let commentBox = document.getElementById("comment-input");
+            let commentText = commentBox.value;
+
+            if(commentText === ''){
+                alert("Please Write a Comment before Submit");
+                return;
+            }
+
+            let commentList = document.getElementById('comment-list');
+
+            if(commentList.innerHTML.includes("No Comment Yet !")){
+                commentList.innerHTML = "";
+            }
+            
+            let newComment = document.createElement('li');
+            newComment.textContent = commentText;
+            commentList.appendChild(newComment);
+
+            commentBox.value = ""
+
+        }
+
+
+
+    </script>
+
+
+
+
+   
+    
+</body>
+</html>
+
+

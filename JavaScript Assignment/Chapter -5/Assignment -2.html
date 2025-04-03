@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+
+
+</head>
+<body onload="changeColor()">
+
+    <h1>Color Change Option</h1>
+    <select id="colorPicker" onchange="changeColor()">
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="blue">Blue</option>
+    </select>
+
+    <script>
+        function changeColor(){
+            let selectedColor = document.getElementById('colorPicker').value;
+
+            document.body.style.backgroundColor = selectedColor;
+        }
+    </script>
+
+
+</body>
+</html>

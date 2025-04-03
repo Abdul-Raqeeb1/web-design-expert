@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Card Develop</title>
+    <script>
+
+        let cart = []; 
+
+        function addItem(item) {
+            cart.push(item); 
+            updateCart(); 
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCart(); 
+        }
+
+        function updateCart() {
+            let cartList = document.getElementById("cart");
+            cartList.innerHTML = ""; 
+
+            cart.forEach((item, index) => {
+                cartList.innerHTML += `<li>${item} <button onclick="removeItem(${index})">Remove</button></li>`;
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Shopping Cart</h2>
+
+    <ul>
+        <li>Apple <button onclick="addItem('Apple')"> Add Now</button></li>
+        <li>Banana <button onclick="addItem('Banana')"> Add Now</button></li>
+        <li>Orange <button onclick="addItem('Orange')"> Add Now</button></li>
+    </ul>
+
+    <h3>Cart List</h3>
+    <ul id="cart"></ul>
+
+
+
+
+</body>
+
+</html>

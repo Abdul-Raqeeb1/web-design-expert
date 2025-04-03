@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Favorite List Movies</title>
+
+    <script>
+
+        let moiveArray = [
+            { "title": "1st Moive", "year": 2010, "genre": "Sci-Fi" },
+            { "title": "2nd Moive", "year": 2011, "genre": "Action" },
+        ]
+
+        function loadingNow(){
+            // let searchMovie = prompt("Enter Your Favorite Moive !");
+
+            // moiveArray[0] = JSON.stringify(moiveArray)
+
+            let access = document.getElementById("movielist");
+
+            moiveArray.forEach(m => {
+                
+                access.innerHTML += `<li>${m.title} - ${m.year} - ${m.genre}</li>`;
+              
+            });
+
+            // access.innerHTML = `<li>${moiveArray[1]}</li>`
+            // access.innerHTML = `<li>${moiveArray[2]}</li>`
+            // access.innerHTML = `<li>${moiveArray[3]}</li>`
+
+            console.log(moiveArray);
+
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <h2>Favorite Movies</h2>
+    <ul id="movielist">Loading....</ul>
+
+    <button onclick="loadingNow()">Search Movies</button>
+
+
+
+
+
+
+
+</body>
+
+</html>
+<!-- show a list of books from a json object , displaying the title and author, -->

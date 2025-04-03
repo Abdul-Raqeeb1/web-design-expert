@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question</title>
+    <script>
+        let correct = 0;
+        function checkTest(){
+            let q1 = document.getElementById('q1');
+            console.log(q1.value);
+            
+            if(q1.value=='b')
+        {
+            correct = correct+1
+        }
+        console.log("correct   "   + correct);
+        document.getElementById("heading").innerText = correct;
+
+        }
+    </script>
+</head>
+<body>
+
+    <p>Which of the following is a primary function of the CPU in a computer?</p>
+    
+    <select id="q1">
+        <option value="a">Store data permanently</option>
+        <option value="b">Perform calculations and execute instructions</option>
+        <option value="c">Display output on the screen</option>
+        <option value="d">Control peripheral devices</option>
+    </select>
+
+    <h1 id="heading">Answer correct</h1>
+
+    <button onclick="checkTest()">Submit</button>
+
+
+    
+</body>
+</html>

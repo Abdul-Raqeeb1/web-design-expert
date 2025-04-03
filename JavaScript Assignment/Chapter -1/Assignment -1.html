@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Message To day</title>
+    <script>
+
+        function getGreeting(){
+            let time = 24;
+
+            let greeting;
+
+            if(time < 12 ){
+                greeting = "Good Morning";
+            }
+            else if(time > 12){
+                greeting = "Good Afternoon";
+            }
+            else if(time > 18) {
+                greeting = "Good Eveing";
+            }
+
+            document.getElementById("greeting").innerText = greeting;
+        }
+
+        window.onload = getGreeting;
+        
+
+
+    </script>
+</head>
+<body>
+
+    <h1 id="greeting"></h1>
+
+
+
+
+    
+</body>
+</html>

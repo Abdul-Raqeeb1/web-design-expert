@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List author Display</title>
+
+    <script>
+
+        let books = [
+            { "title": "To Kill a Mockingbird","author": "Harper Lee"},
+            { "title": "To servie a book","author": "die Lee"},
+            { "title": "To cook a food book","author": "uper Lee"},
+        ]
+
+        function showBooks(){
+            let takeing = document.getElementById("booklisting");
+
+            books.forEach(b => {
+                takeing.innerHTML += `<td>${b.title} - ${b.author}</td>`;
+            });
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <h2>Show Author </h2>
+
+    <table id="booklisting" border="1px"></table>
+
+    <button onclick="showBooks()"> Show Book </button>
+
+
+    
+</body>
+</html>
