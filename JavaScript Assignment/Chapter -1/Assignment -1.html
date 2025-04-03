@@ -7,22 +7,32 @@
     <script>
 
         function getGreeting(){
-            let time = 24;
 
-            let greeting;
+            let user = parseInt(prompt("enter your time"));
 
-            if(time < 12 ){
+            // let time = 24;
+
+
+            let greeting = "";
+
+            if(user <= 11 ){
                 greeting = "Good Morning";
             }
-            else if(time > 12){
+            else if(user > 11 && user <= 16){
                 greeting = "Good Afternoon";
             }
-            else if(time > 18) {
+            else if(user > 16 && user <= 20) {
                 greeting = "Good Eveing";
             }
+            else if(user > 20 ) {
+                greeting = "Good Night";
+            }
+
+            console.log(greeting)
 
             document.getElementById("greeting").innerText = greeting;
         }
+
 
         window.onload = getGreeting;
         
@@ -33,6 +43,8 @@
 <body>
 
     <h1 id="greeting"></h1>
+
+    <button onclick="getGreeting()">Click me</button>
 
 
 

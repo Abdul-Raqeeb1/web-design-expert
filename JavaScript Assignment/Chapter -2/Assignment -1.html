@@ -6,14 +6,16 @@
     <title>Show Total Amount </title>
     <script>
 
+        let sum = 0;
+
         function updateAmount(){
             let oneAmount = parseInt(prompt("Enter Your First Amount"));
-            let secondAmount = parseInt(prompt("Enter Your Second Amount"));
 
-            let sum = oneAmount + secondAmount;
+             sum += oneAmount;
 
-            document.getElementById("amount").innerHTML += "<br>";
-            document.getElementById("amount").innerText += sum;
+
+            // document.getElementById("amount").innerHTML += "<br>";
+            document.getElementById("amount").innerText = "Show Amount:  " + sum;
 
         }
 
@@ -25,6 +27,7 @@
 <body>
 
     <button onclick="updateAmount()">Update</button>
+    <button onclick="addAmount()">add</button>
 
     <h1 id="amount"> Show Amount</h1>
 

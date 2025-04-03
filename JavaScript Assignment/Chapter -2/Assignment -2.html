@@ -8,14 +8,29 @@
         let correct = 0;
         function checkTest(){
             let q1 = document.getElementById('q1');
+            let q2 = document.getElementById('q2');
+            let q3 = document.getElementById('q3');
+            let q4 = document.getElementById('q4');
             console.log(q1.value);
             
-            if(q1.value=='b')
+        if(q1.value=='b')
+        {
+            correct = correct+1
+        }
+        if(q2.value=='d')
+        {
+            correct = correct+1
+        }
+        if(q3.value=='c')
+        {
+            correct = correct+1
+        }
+        if(q4.value=='c')
         {
             correct = correct+1
         }
         console.log("correct   "   + correct);
-        document.getElementById("heading").innerText = correct;
+        document.getElementById("heading").innerText = "correct Answer:  " + correct;
 
         }
     </script>
@@ -30,6 +45,34 @@
         <option value="c">Display output on the screen</option>
         <option value="d">Control peripheral devices</option>
     </select>
+
+    <p>What is the largest ocean on Earth?</p>
+    
+    <select id="q2">
+        <option value="a">Atlantic Ocean</option>
+        <option value="b"> Indian Ocean</option>
+        <option value="c">Arctic Ocean</option>
+        <option value="d">Pacific Ocean</option>
+    </select>
+
+    <p>What is the hardest natural substance on Earth?</p>
+    
+    <select id="q3">
+        <option value="a"> Gold</option>
+        <option value="b">Iron</option>
+        <option value="c">Diamond</option>
+        <option value="d">Platinum</option>
+    </select>
+
+    <p>In which country would you find the historic landmark, the Eiffel Tower?</p>
+    
+    <select id="q4">
+        <option value="a">Spain</option>
+        <option value="b"> Italy</option>
+        <option value="c">France</option>
+        <option value="d">Germany</option>
+    </select>
+
 
     <h1 id="heading">Answer correct</h1>
 
