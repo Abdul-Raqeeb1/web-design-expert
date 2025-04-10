@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moblie Friendly Homepage</title>
+
+    <style>
+        *{
+            margin: 0%;
+        }
+        .container{
+            /* background-color: rebeccapurple; */
+            width: 100%;
+            height: 100vh;
+        }
+        .nav{
+            background-color: black;
+            width: 100%;
+            height: 150px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            /* background-color: rgb(0, 140, 255); */
+            width: 100%;
+            height: 600px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .card{
+            /* background-color: yellow; */
+            width: 30%;
+            height: 200px;
+            border: 2px solid black;
+            border-style: dashed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .para-1{
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        .heading-1{
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        @media (max-width:950px) {
+            .card{
+                width: 35%;
+            }
+            .content{
+                gap: 20px;
+            }
+        }
+        @media (max-width:687px) {
+            .card{
+                width: 40%;
+            }
+            .content{
+                gap: 20px;
+            }
+        }
+        @media (max-width:640px) {
+            .card{
+                width: 90%;
+            }
+            .content{
+                gap: 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav">
+            <h1 class="heading-1">Wellcome to Our Responsive Website</h1>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h3>Feature -1</h3>
+                <p class="para-1">Responsive design adapts to different screen sizes</p>
+            </div>
+            <div class="card">
+                <h3>Feature -2</h3>
+                <p class="para-1">Uses flexbox for a dynamic layout.</p>
+            </div>
+            <div class="card">
+                <h3>Feature -3</h3>
+                <p class="para-1">Optimized for mobile devices width <br> media queries</p>
+            </div>
+            <div class="card">
+                <h3>Feature -4</h3>
+                <p class="para-1">It is header to narrow a desktop <br>layout for a mobile viewport. while <br> the reverse is easer</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

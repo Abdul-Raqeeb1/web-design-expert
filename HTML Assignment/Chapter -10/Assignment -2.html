@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer </title>
+
+    <style>
+        *{
+            margin: 0%;
+        }
+        .container{
+            /* background-color: yellow; */
+            width: 100%;
+            height: 100vh;
+        }
+        .content{
+            /* background-color: blue; */
+            width: 100%;
+            height: 750px;
+            font-size: 2rem;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: white;
+        }
+        ul{
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            align-items: center;
+        }
+        .copyright{
+            width: 100%;
+            height: 39px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        @media (max-width:546px) {
+            .content{
+                font-size: 1.2rem;
+            }
+        }
+        @media (max-width:480px) {
+            ul{
+                flex-direction: column;
+                align-items: center;
+            }
+            .copyright{
+                align-items: center;
+            }
+            .para-2{
+                width: 100%;
+                height: auto;
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <p class="para-1">Main Content of the website goes here.</p>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>Contact</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="para-2">&copy; 2025 Design By Abdul Raqeeb:All rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>

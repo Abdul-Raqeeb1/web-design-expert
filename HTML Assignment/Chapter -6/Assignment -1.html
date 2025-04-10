@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Side Bar Menu</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        .main-container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .con-1{
+            width: 10%;
+            height: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            gap: 30px;
+            align-items: center;
+            list-style: none;
+            font-size: 1.5rem;
+        }
+        .con-2{
+            /* background-color: red; */
+            width: 90%;
+            height: 100%;
+        }
+        .div-join{
+            width: 100%;
+            height: 100px;
+            /* background-color: yellow; */
+            margin-top: 30px;
+        }
+        .heading-1{
+            width: 80%;
+            height: 50px;
+            margin-left: 30px;
+        }
+        .para-1{
+            width: 80%;
+            height: 50px;
+            font-size: 1.2rem;
+            margin-left: 30px;
+        }
+        .chat-box{
+            width: 100%;
+            height: 758px;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+        .icon{
+            font-size: 2rem;
+            color: greenyellow;
+            margin-right: 20px;
+            position: absolute;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="con-1">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="con-2">
+            <div class="div-join">
+            <h1 class="heading-1">Wellcome To Our Website</h1>
+            <p class="para-1">This is a simple webpage with a fixed sidebar menu </p>
+            </div>
+            <div class="chat-box">
+                <i class="fa-solid fa-comments icon"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

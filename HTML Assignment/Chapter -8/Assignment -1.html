@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Important Message</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        .nav{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 100px;
+        }
+        ul{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 1.5rem;
+            list-style: none;
+        }
+        .container{
+            /* background-color: red; */
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .con-1{
+            background-color: greenyellow;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+        .con-2{
+            background-color: yellow;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+        .con-3{
+            background-color: red;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="con-1">
+            <p>Success! Your form has been submitted.</p>
+        </div>
+        <div class="con-2">
+            <p>Warning! Your account will expire soon.</p>
+        </div>
+        <div class="con-3">
+            <p>Error! Invalid credentials. Please try again.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+</body>
+</html>
