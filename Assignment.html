@@ -1,436 +1,713 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Assignments</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assignment.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assignment.css" />
 
     <script>
+      function mainFunction() {
+        document.getElementById("chapters-1").style.display = "none";
+        document.getElementById("chapters-2").style.display = "none";
+      }
 
-        function mainFunction(){
-            document.getElementById("chapters-1").style.display = "none"
-            document.getElementById("chapters-2").style.display = "none"
-        }
-
-        function readMore1(){
-            document.getElementById("chapters-1").style.display = "block";
-            document.getElementById("chapters-2").style.display = "none";
-
-        }
-        function readMore2(){
-            document.getElementById("chapters-2").style.display = "block";
-            document.getElementById("chapters-1").style.display = "none";
-        }
+      function readMore1() {
+        document.getElementById("chapters-1").style.display = "block";
+        document.getElementById("chapters-2").style.display = "none";
+      }
+      function readMore2() {
+        document.getElementById("chapters-2").style.display = "block";
+        document.getElementById("chapters-1").style.display = "none";
+      }
     </script>
+  </head>
 
-</head>
-
-<body onload="mainFunction()">
-
+  <body onload="mainFunction()">
     <nav class="navbar">
-        <a href="#" class="logo">Portfolio</a>
-        <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li class="active"><a href="Assignment.html">Assignments</a></li>
-            <li><a href="Portfolio.html">Portfolio</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="https://wa.me/+923703083097">Contact</a></li>
-        </ul>
+      <a href="#" class="logo">Portfolio</a>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li class="active"><a href="Assignment.html">Assignments</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="https://wa.me/+923703083097">Contact</a></li>
+      </ul>
     </nav>
 
     <div class="heading-1">
-        <h1>Module Assignments</h1>
+      <h1>Module Assignments</h1>
     </div>
 
     <!-- Assignment Box For Java Scirpt -->
 
-    <div class="assignment-Box" >
-        <div class="assignment-detail-name">
-            <div class="hashtag">
-                <i class="fa-solid fa-hashtag icon-1"></i>
-            </div>
-            <div class="detail-box">
-                <h2>Assignment Details JavaScript</h2>
-            </div>
-            <div class="status-box">
-                <h3>Status</h3>
-            </div>
+    <div class="assignment-Box">
+      <div class="assignment-detail-name">
+        <div class="hashtag">
+          <i class="fa-solid fa-hashtag icon-1"></i>
         </div>
-        <!-- End Of Assignment Detail Name -->
-        <span id="chapters-1">
+        <div class="detail-box">
+          <h2>Assignment Details JavaScript</h2>
+        </div>
+        <div class="status-box">
+          <h3>Status</h3>
+        </div>
+      </div>
+      <!-- End Of Assignment Detail Name -->
+      <span id="chapters-1">
         <!-- Chapter Name 01 -->
-        <div class="chapter-name" >
-            <p class="para-1">Chapter 01 : Introduction to JavaScript </p>
+        <div class="chapter-name">
+          <p class="para-1">Chapter 01 : Introduction to JavaScript</p>
         </div>
         <div class="question-1">
-            <div class="number">01</div>
-            <div class="question">Show a Greeting Message That Change Based On The Time Of day (e.g "Good Morning."
-                "Good Evening").</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -1/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">01</div>
+          <div class="question">
+            Show a Greeting Message That Change Based On The Time Of day (e.g
+            "Good Morning." "Good Evening").
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -1/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">02</div>
-            <div class="question">Create a simple name prompt where user enter their name, and it displays a
-                personalized welcome message.</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -1/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">02</div>
+          <div class="question">
+            Create a simple name prompt where user enter their name, and it
+            displays a personalized welcome message.
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -1/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 01 -->
 
         <!-- Chapter Name 02 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 02 : JavaScript Essentials </p>
+          <p class="para-1">Chapter 02 : JavaScript Essentials</p>
         </div>
         <div class="question-1">
-            <div class="number">03</div>
-            <div class="question">Make a basic expense tracker where user can enter an amount , and it updates the total
-                spent</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -2/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">03</div>
+          <div class="question">
+            Make a basic expense tracker where user can enter an amount , and it
+            updates the total spent
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -2/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">04</div>
-            <div class="question">Build a simple quiz with tow multiple-choice questions and display the score after
-                submission</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -2/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">04</div>
+          <div class="question">
+            Build a simple quiz with tow multiple-choice questions and display
+            the score after submission
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -2/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 02 -->
 
         <!-- Chapter Name 03 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 03 : DOM Manipulation Basics </p>
+          <p class="para-1">Chapter 03 : DOM Manipulation Basics</p>
         </div>
         <div class="question-1">
-            <div class="number">05</div>
-            <div class="question">Create a to-do list where users can add and remove tasks.</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -3/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">05</div>
+          <div class="question">
+            Create a to-do list where users can add and remove tasks.
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -3/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">06</div>
-            <div class="question">Design a "Show More / Show Less " button that expands and collapses text when clicked.
-            </div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -3/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">06</div>
+          <div class="question">
+            Design a "Show More / Show Less " button that expands and collapses
+            text when clicked.
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -3/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 03 -->
 
         <!-- Chapter Name 04 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 04 : Advanced DOM Manipulation </p>
+          <p class="para-1">Chapter 04 : Advanced DOM Manipulation</p>
         </div>
         <div class="question-1">
-            <div class="number">07</div>
-            <div class="question">Create an Image gallery where clicking on an image makes it larger.</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -4/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">07</div>
+          <div class="question">
+            Create an Image gallery where clicking on an image makes it larger.
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -4/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">08</div>
-            <div class="question">Develop a simple shopping cart where users can add and remove items from a list</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -4/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">08</div>
+          <div class="question">
+            Develop a simple shopping cart where users can add and remove items
+            from a list
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -4/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 04 -->
 
         <!-- Chapter Name 05 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 05 : User Input and Dynamic Content </p>
+          <p class="para-1">Chapter 05 : User Input and Dynamic Content</p>
         </div>
         <div class="question-1">
-            <div class="number">09</div>
-            <div class="question">Make a comment box where users can type and submit comments, which appear instanly
-                below.</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -5/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">09</div>
+          <div class="question">
+            Make a comment box where users can type and submit comments, which
+            appear instanly below.
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -5/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">10</div>
-            <div class="question">Create a form with a dropdown menu that changes the page background based on the
-                selected color.</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -5/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">10</div>
+          <div class="question">
+            Create a form with a dropdown menu that changes the page background
+            based on the selected color.
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -5/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 05 -->
 
         <!-- Chapter Name 06 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 06 :Rendering Dynamic Content from JSON </p>
+          <p class="para-1">Chapter 06 :Rendering Dynamic Content from JSON</p>
         </div>
         <div class="question-1">
-            <div class="number">11</div>
-            <div class="question">Load and display a list of favorite movies from a JSON file.</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -6/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">11</div>
+          <div class="question">
+            Load and display a list of favorite movies from a JSON file.
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -6/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">12</div>
-            <div class="question">Show a list of books from a JSON object, displaying the title and author</div>
-            <div class="status-link">
-                <a href="JavaScript Assignment/Chapter -6/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">12</div>
+          <div class="question">
+            Show a list of books from a JSON object, displaying the title and
+            author
+          </div>
+          <div class="status-link">
+            <a
+              href="JavaScript Assignment/Chapter -6/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 06 -->
-        </span>
+      </span>
 
-        <button class="btn-1" onclick="readMore1()">Read More </button>
-        
+      <button class="btn-1" onclick="readMore1()">Read More</button>
     </div>
 
     <!-- Assignment Box For HTML or CSS -->
 
-    <div class="assignment-Box" id="">
-        <div class="assignment-detail-name">
-            <div class="hashtag">
-                <i class="fa-solid fa-hashtag icon-1"></i>
-            </div>
-            <div class="detail-box">
-                <h2>Assignment Details Html  &&  Css</h2>
-            </div>
-            <div class="status-box">
-                <h3>Status</h3>
-            </div>
+    <div class="assignment-Box">
+      <div class="assignment-detail-name">
+        <div class="hashtag">
+          <i class="fa-solid fa-hashtag icon-1"></i>
         </div>
-        <!-- End Of Assignment Detail Name -->
-        <span id="chapters-2">
+        <div class="detail-box">
+          <h2>Assignment Details Html && Css</h2>
+        </div>
+        <div class="status-box">
+          <h3>Status</h3>
+        </div>
+      </div>
+      <!-- End Of Assignment Detail Name -->
+      <span id="chapters-2">
         <!-- Chapter Name 01 -->
-        <div class="chapter-name" >
-            <p class="para-1">Chapter 01 : Introduction to HTML </p>
+        <div class="chapter-name">
+          <p class="para-1">Chapter 01 : Introduction to HTML</p>
         </div>
         <div class="question-1">
-            <div class="number">01</div>
-            <div class="question">Create a simple personal webpage with a heading (your name), an introduction paragraph, and a footer with contact information.
-            </div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -1/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">01</div>
+          <div class="question">
+            Create a simple personal webpage with a heading (your name), an
+            introduction paragraph, and a footer with contact information.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -1/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">02</div>
-            <div class="question">Structure an 'About Me' section with proper headings, paragraphs, and horizontal lines for separation.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -1/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">02</div>
+          <div class="question">
+            Structure an 'About Me' section with proper headings, paragraphs,
+            and horizontal lines for separation.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -1/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 01 -->
 
         <!-- Chapter Name 02 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 02 : Lists and Tables </p>
+          <p class="para-1">Chapter 02 : Lists and Tables</p>
         </div>
         <div class="question-1">
-            <div class="number">03</div>
-            <div class="question">Use unordered and ordered lists to showcase popular Karachi Street foods like Bun Kebab, Nihari, and Biryani. Include prices and descriptions.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -2/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">03</div>
+          <div class="question">
+            Use unordered and ordered lists to showcase popular Karachi Street
+            foods like Bun Kebab, Nihari, and Biryani. Include prices and
+            descriptions.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -2/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">04</div>
-            <div class="question">Build a student marksheet table with columns for Subject, Marks, and Grade. Style it with borders, background colors, and alternating row colors.
-            </div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -2/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">04</div>
+          <div class="question">
+            Build a student marksheet table with columns for Subject, Marks, and
+            Grade. Style it with borders, background colors, and alternating row
+            colors.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -2/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 02 -->
 
         <!-- Chapter Name 03 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 03 : Multimedia and Layout Basics </p>
+          <p class="para-1">Chapter 03 : Multimedia and Layout Basics</p>
         </div>
         <div class="question-1">
-            <div class="number">05</div>
-            <div class="question">Add your profile picture, a short bio, and a contact section. Style it using CSS borders and shadows.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -3/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">05</div>
+          <div class="question">
+            Add your profile picture, a short bio, and a contact section. Style
+            it using CSS borders and shadows.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -3/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">06</div>
-            <div class="question">Add an audio player with controls for play/pause and volume. Ensure its styled properly and responsive.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -3/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">06</div>
+          <div class="question">
+            Add an audio player with controls for play/pause and volume. Ensure
+            its styled properly and responsive.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -3/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 03 -->
 
         <!-- Chapter Name 04 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 04 : Anchor, Navigation, and Basic Animation </p>
+          <p class="para-1">
+            Chapter 04 : Anchor, Navigation, and Basic Animation
+          </p>
         </div>
         <div class="question-1">
-            <div class="number">07</div>
-            <div class="question">Build a homepage with a navigation menu that includes Home, About, Services, and Contact links.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -4/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">07</div>
+          <div class="question">
+            Build a homepage with a navigation menu that includes Home, About,
+            Services, and Contact links.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -4/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">08</div>
-            <div class="question">Implement ID-based navigation so users can click menu items to smoothly scroll to different sections of the page.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -4/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">08</div>
+          <div class="question">
+            Implement ID-based navigation so users can click menu items to
+            smoothly scroll to different sections of the page.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -4/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 04 -->
 
         <!-- Chapter Name 05 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 05 : Divs, Classes, IDs </p>
+          <p class="para-1">Chapter 05 : Divs, Classes, IDs</p>
         </div>
         <div class="question-1">
-            <div class="number">09</div>
-            <div class="question">Create a div-based banner that includes a product image, title, description, and price.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -5/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">09</div>
+          <div class="question">
+            Create a div-based banner that includes a product image, title,
+            description, and price.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -5/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">10</div>
-            <div class="question">Apply a background image and use text overlays with a CTA (Call-To-Action) button.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -5/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">10</div>
+          <div class="question">
+            Apply a background image and use text overlays with a CTA
+            (Call-To-Action) button.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -5/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 05 -->
 
         <!-- Chapter Name 06 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 06 : CSS Positions and Other Essentials </p>
+          <p class="para-1">Chapter 06 : CSS Positions and Other Essentials</p>
         </div>
         <div class="question-1">
-            <div class="number">11</div>
-            <div class="question">Create a sidebar navigation that remains fixed on the left side of the page.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -6/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">11</div>
+          <div class="question">
+            Create a sidebar navigation that remains fixed on the left side of
+            the page.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -6/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">12</div>
-            <div class="question">Place a chat button at the bottom right corner using absolute positioning.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -6/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">12</div>
+          <div class="question">
+            Place a chat button at the bottom right corner using absolute
+            positioning.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -6/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 06 -->
-        
+
         <!-- Chapter Number 07 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 7: Semantic HTML and Forms </p>
+          <p class="para-1">Chapter 7: Semantic HTML and Forms</p>
         </div>
         <div class="question-1">
-            <div class="number">13</div>
-            <div class="question">Create a form with Name, Email, Phone, Resume Upload, and a Submit button.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -7/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">13</div>
+          <div class="question">
+            Create a form with Name, Email, Phone, Resume Upload, and a Submit
+            button.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -7/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">14</div>
-            <div class="question">Make a simple subscription form that asks for an email and has a submit button.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -7/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">14</div>
+          <div class="question">
+            Make a simple subscription form that asks for an email and has a
+            submit button.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -7/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 07 -->
 
         <!-- Chapter Number 08 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 8: CSS Selectors and Pseudo-Selectors</p>
+          <p class="para-1">Chapter 8: CSS Selectors and Pseudo-Selectors</p>
         </div>
         <div class="question-1">
-            <div class="number">15</div>
-            <div class="question">Use CSS selectors to style warning, success, and error messages dynamically.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -8/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">15</div>
+          <div class="question">
+            Use CSS selectors to style warning, success, and error messages
+            dynamically.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -8/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">16</div>
-            <div class="question">Change the background color and text color when hovering over menu items.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -8/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">16</div>
+          <div class="question">
+            Change the background color and text color when hovering over menu
+            items.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -8/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 08 -->
 
         <!-- Chapter Number 09 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 9: Layouts with Flexbox and Grid </p>
+          <p class="para-1">Chapter 9: Layouts with Flexbox and Grid</p>
         </div>
         <div class="question-1">
-            <div class="number">17</div>
-            <div class="question">Use Flexbox to design a three-column services section with images and descriptions.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -9/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">17</div>
+          <div class="question">
+            Use Flexbox to design a three-column services section with images
+            and descriptions.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -9/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">18</div>
-            <div class="question">Arrange images in a responsive grid format for a photographer's portfolio.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -9/Assignment -3.html" class="href-link">Link</a>
-            </div>
+          <div class="number">18</div>
+          <div class="question">
+            Arrange images in a responsive grid format for a photographer's
+            portfolio.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -9/Assignment -3.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 09 -->
 
         <!-- Chapter Number 10 -->
         <div class="chapter-name">
-            <p class="para-1">Chapter 10: Responsive Design and Media Queries </p>
+          <p class="para-1">Chapter 10: Responsive Design and Media Queries</p>
         </div>
         <div class="question-1">
-            <div class="number">19</div>
-            <div class="question">Use media queries to make the website layout adjust on different screen sizes.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -10/Assignment -1.html" class="href-link">Link</a>
-            </div>
+          <div class="number">19</div>
+          <div class="question">
+            Use media queries to make the website layout adjust on different
+            screen sizes.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -10/Assignment -1.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <div class="question-1">
-            <div class="number">20</div>
-            <div class="question">Ensure the footer elements stack vertically on small screens and remain horizontal on larger screens.</div>
-            <div class="status-link">
-                <a href="HTML Assignment/Chapter -10/Assignment -2.html" class="href-link">Link</a>
-            </div>
+          <div class="number">20</div>
+          <div class="question">
+            Ensure the footer elements stack vertically on small screens and
+            remain horizontal on larger screens.
+          </div>
+          <div class="status-link">
+            <a
+              href="HTML Assignment/Chapter -10/Assignment -2.html"
+              class="href-link"
+              >Link</a
+            >
+          </div>
         </div>
         <!-- End of Chapter 10 -->
+      </span>
 
-
-
-
-
-        </span>
-
-        <button class="btn-1" onclick="readMore2()">Read More </button>
-        
+      <button class="btn-1" onclick="readMore2()">Read More</button>
     </div>
 
+    <!-- Assignment Box For BootStrap && Tailwind css  -->
 
+    <div class="assignment-Box">
+      <div class="assignment-detail-name">
+        <div class="hashtag">
+          <i class="fa-solid fa-hashtag icon-1"></i>
+        </div>
+        <div class="detail-box">
+          <h2>Assignment Details BootStrap || TailWind Css</h2>
+        </div>
+        <div class="status-box">
+          <h3>Status</h3>
+        </div>
+      </div>
+      <!-- End Of Assignment Detail Name -->
+      <span id="chapters-1">
+        <!-- Chapter Name 01 -->
+        <div class="chapter-name">
+          <p class="para-1">Chapter 01 : BootStrap</p>
+        </div>
+        <div class="question-1">
+          <div class="number">01</div>
+          <div class="question">
+            A local business wants an e-commerce homepage. Use Bootstap's grid
+            and components to create a structured layout featuring a navbar,
+            banner , product section and footer.
+          </div>
+          <div class="status-link">
+            <a href="" class="href-link">Link</a>
+          </div>
+        </div>
+        <div class="question-1">
+          <div class="number">02</div>
+          <div class="question">
+            A startup needs a contact form for customer inquiries. Use Bootstrap
+            form controls to design a clean, responsive form with name, email ,
+            messages fields, and a submit button.
+          </div>
+          <div class="status-link">
+            <a href="" class="href-link">Link</a>
+          </div>
+        </div>
+        <!-- End of Chapter 01 -->
 
+        <!-- Chapter Name 02 -->
+        <div class="chapter-name">
+          <p class="para-1">Chapter 02 : TailWind Css</p>
+        </div>
+        <div class="question-1">
+          <div class="number">03</div>
+          <div class="question">
+            A new tech company wants a landing page to attract users. Use
+            Tailwind's utility classes to design a visually appealing hero
+            section,service overview, and Call-To-Action
+          </div>
+          <div class="status-link">
+            <a href="" class="href-link">Link</a>
+          </div>
+        </div>
+        <div class="question-1">
+          <div class="number">04</div>
+          <div class="question">
+            A freelance writer needs a blog layout that looks great on all
+            devices. Use Tailwind's gird system to create a multi-column blog
+            with featured posts and an adaptive sidebar.
+          </div>
+          <div class="status-link">
+            <a href="" class="href-link">Link</a>
+          </div>
+        </div>
+        <!-- End of Chapter 02 -->
+      </span>
 
+      <button class="btn-1" onclick="readMore1()">Read More</button>
+    </div>
+    
 
-
-
-
-
-</body>
-
+    
+  </body>
 </html>
