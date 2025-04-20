@@ -17,14 +17,22 @@
       function mainFunction() {
         document.getElementById("chapters-1").style.display = "none";
         document.getElementById("chapters-2").style.display = "none";
+        document.getElementById("chapters-3").style.display = "none";
       }
 
       function readMore1() {
         document.getElementById("chapters-1").style.display = "block";
         document.getElementById("chapters-2").style.display = "none";
+        document.getElementById("chapters-3").style.display = "none";
       }
       function readMore2() {
         document.getElementById("chapters-2").style.display = "block";
+        document.getElementById("chapters-1").style.display = "none";
+        document.getElementById("chapters-3").style.display = "none";
+      }
+      function readMore3(){
+        document.getElementById("chapters-3").style.display = "block";
+        document.getElementById("chapters-2").style.display = "none";
         document.getElementById("chapters-1").style.display = "none";
       }
     </script>
@@ -646,7 +654,7 @@
         </div>
       </div>
       <!-- End Of Assignment Detail Name -->
-      <span id="chapters-1">
+      <span id="chapters-3">
         <!-- Chapter Name 01 -->
         <div class="chapter-name">
           <p class="para-1">Chapter 01 : BootStrap</p>
@@ -704,7 +712,7 @@
         <!-- End of Chapter 02 -->
       </span>
 
-      <button class="btn-1" onclick="readMore1()">Read More</button>
+      <button class="btn-1" onclick="readMore3()">Read More</button>
     </div>
     
 
